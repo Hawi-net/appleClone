@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  body {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    color: #000;
+  }
+
+/* ===== MacBook Hero Section ===== */
+
+.white {
+  color: #fff;
+}
+.black {
+  color: #1d1d1f;
+}
+.grey {
+  color: #86868b;
+}
+.custom-top-50 {
+  margin-top: 50px;
+}
+.custom-top-100 {
+  margin-top: 100px;
+}
+
+/* Base Blue Color (Removed .bg-black so it works on your .bg-white section) */
+.text-apple-blue {
+  color: #0066cc; /* Adjusted to an Apple-like blue that is readable on white backgrounds */
+}
+
+/* Shared Product Backgrounds (Mac & iPhone) */
+.custom-bg-common {
+  height: 500px;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.custom-links-wrapper a::after {
+  content: " \f105";
+  font-family: "FontAwesome";
+}
+
+/* Background Images */
+.custom-macbook-image-bg {
+  background-image: url("../images/home/mac-laptop.jpg");
+}
+
+/* 2-Column Grid Style */
+.custom-grid-column {
+  height: 580px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-description-wrapper {
+  font-size: 1.25rem;
+}
+
+/* Global Responsiveness */
+@media (max-width: 768px) {
+  .custom-common {
+    height: 300px;
+  }
+  .custom-grid-column {
+    height: 450px;
+  }
+  .custom-display-3 {
+    font-size: 2.5rem;
+  }
+  .custom-h2 {
+    font-size: 1.5rem;
+  }
+}
